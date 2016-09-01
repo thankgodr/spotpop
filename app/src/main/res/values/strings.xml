@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SPOTPOP</string>
+
+    <string name="navigation_drawer_open">OPEN MENU</string>
+    <string name="navigation_drawer_close">xCLOSE MENU</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="my_account">My Account</string>
+    <string name="my_spots">My Spots</string>
+    <string name="my_favourites">My Favourites</string>
+    <string name="spot_map">Spot Map</string>
+    <string name="spot_list">Spot List</string>
+    <string name="search_spots">Search Spots</string>
+    <string name="about_amp_help"><![CDATA[About & Help]]></string>
+    <string name="title_activity_spot_list">SpotListActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

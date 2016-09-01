@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/menu_myAccount">
+        <item
+            android:id="@+id/myAccout"
+            android:icon="@drawable/ic_person_outline_black_24dp"
+            android:title="@string/my_account"/>
+    </group>
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/menu_mySpot">
+        <item
+            android:id="@+id/mySpot"
+            android:icon="@drawable/ic_store_mall_directory_black_24dp"
+            android:title="@string/my_spots" />
+    </group>
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/menu_myFav">
+        <item
+            android:id="@+id/myFav"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="@string/my_favourites" />
+    </group>
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/menu_spotMap">
+        <item
+            android:id="@+id/spotMap"
+            android:icon="@drawable/ic_map_black_24dp"
+            android:title="@string/spot_map" />
+    </group>
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/menu_spotList">
+        <item
+            android:id="@+id/spotList"
+            android:icon="@drawable/ic_folder_open_black_24dp"
+            android:title="@string/spot_list" />
+    </group>
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/menu_search">
+        <item
+            android:id="@+id/search"
+            android:icon="@drawable/ic_device_hub_black_24dp"
+            android:title="@string/search_spots"
+            />
+
+     </group>
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/menu_about">
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/ic_check_box_black_24dp"
+            android:title="@string/about_amp_help" />
+    </group>
+
+</menu>
