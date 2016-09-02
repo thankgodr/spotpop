@@ -1,13 +1,7 @@
 package com.shixxels.thankgodrichard.spotpop;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -16,9 +10,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.Window;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +40,14 @@ public class MainActivity extends AppCompatActivity
 
 
 
+
     }
+
+    // Fragment use this to change the Title at the app bar
+    public void setActionBarTitle(String title) {
+        getSupportActionBar().setTitle(title);
+    }
+
 
     @Override
     public void onBackPressed() {
@@ -82,21 +89,26 @@ public class MainActivity extends AppCompatActivity
 
 
         if (id == R.id.myAccout) {
-            // Handle the action for my account
-           AboutFragment aboutFragment = new AboutFragment();
-            FragmentManager manager = getSupportFragmentManager();
-            manager.beginTransaction().replace(R.id.content, aboutFragment).commit();
+            new OpenFragmentLayout().Account();
         } else if (id == R.id.mySpot) {
+            new OpenFragmentLayout().MySpot();
 
         } else if (id == R.id.myFav) {
+            new OpenFragmentLayout().MyFav();
 
         } else if (id == R.id.spotList) {
+            new OpenFragmentLayout().SpotList();
 
         } else if (id == R.id.mySpot) {
+            new OpenFragmentLayout().MySpot();
+
 
         } else if (id == R.id.spotMap) {
+            new OpenFragmentLayout().SpotMap();
+
 
         }else if (id == R.id.about) {
+            new OpenFragmentLayout().About();
 
         }
 
@@ -105,4 +117,38 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    public class OpenFragmentLayout {
+        private void About() {
+            About fragment = new About();
+            FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction().replace(R.id.content, fragment).addToBackStack(null).commit();
+        }
+        private void MyFav() {
+            MyFav fragment = new MyFav();
+            FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction().replace(R.id.content, fragment).commit();
+        }
+        private void MySpot() {
+            MySpot fragment = new MySpot();
+            FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction().replace(R.id.content, fragment).commit();
+        }
+        private void Account() {
+            account fragment = new account();
+            FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction().replace(R.id.content, fragment).commit();
+        }
+        private void SpotMap() {
+            SpotMap fragment = new SpotMap();
+            FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction().replace(R.id.content, fragment).commit();
+        }
+        private void SpotList() {
+            SpotList fragment = new SpotList();
+            FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction().replace(R.id.content, fragment).commit();
+        }
+    }
+
 }
