@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d86500</color>
+    <color name="colorPrimaryDark">#d86500</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="loginTab">#ede4e0</color>
+    <color name="for_alert_login">#f85439</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>
