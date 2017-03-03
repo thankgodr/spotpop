@@ -12,28 +12,52 @@
         android:scaleType="fitXY"
         />
 
+
 <LinearLayout
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal">
 
-    <include layout="@layout/widowstitle" />
+    <ImageView
+        android:id="@+id/toolbar_logo"
+        android:src="@drawable/logo"
+        android:layout_width="277.7dp"
+        android:layout_height="115.3dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
 
-    <ImageButton android:id="@+id/facebook_login"
-        android:src="@drawable/facebook_login"
-        android:layout_width="316dp"
-        android:layout_height="104dp"
-        style="?android:attr/borderlessButtonStyle"
-        android:scaleType="centerInside"
-        android:layout_gravity="center" />
+        />
 
 
-        <LinearLayout
+
+
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/facebook_login"
+        android:layout_width="246.7dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="15dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="15dp"
+        android:layout_marginTop="25.3dp" />
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <LinearLayout
             android:id="@+id/email_login_form"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
 
 
             <RelativeLayout
@@ -47,7 +71,11 @@
                     android:layout_width="@dimen/icon_width"
                     android:layout_height="@dimen/icon_height"
                     android:src="@mipmap/email_ic"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginRight="5dp"
                     android:id="@+id/email_ic"/>
+
                 <EditText
                     android:id="@+id/regemail"
                     android:layout_width="match_parent"
@@ -57,8 +85,18 @@
                     android:imeOptions="actionNext|actionUnspecified"
                     android:inputType="textEmailAddress"
                     android:maxLines="1"
+                    android:background="@null"
                     android:layout_toRightOf="@+id/email_ic"
                     android:singleLine="true" />
+                <View
+                    android:id="@+id/line_bottom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#9f9f9f"
+                    android:layout_below="@+id/email_ic"
+                    />
+
+
 
 
 
@@ -84,6 +122,7 @@
                     android:imeOptions="actionUnspecified"
                     android:inputType="text"
                     android:maxLines="1"
+                    android:background="@null"
                     android:layout_toRightOf="@+id/username_ic"
                     android:singleLine="true" />
 
@@ -91,7 +130,18 @@
                     android:layout_width="@dimen/icon_width"
                     android:layout_height="@dimen/icon_height"
                     android:src="@mipmap/username_ic"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginRight="5dp"
                     android:id="@+id/username_ic"/>
+                <View
+                    android:id="@+id/line_bottom2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#9f9f9f"
+                    android:layout_below="@+id/username_ic"
+                    />
+
 
 
 
@@ -107,6 +157,9 @@
                     android:layout_width="@dimen/icon_width"
                     android:layout_height="@dimen/icon_height"
                     android:src="@mipmap/password_ic"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginRight="5dp"
                     android:id="@+id/regpassword_icon5" />
 
 
@@ -120,9 +173,17 @@
                     android:imeOptions="actionUnspecified"
                     android:inputType="textPassword"
                     android:maxLines="1"
+                    android:background="@null"
                     android:singleLine="true"
-                    android:layout_toEndOf="@+id/regpassword_icon5"
                     android:layout_toRightOf="@+id/regpassword_icon5" />
+                <View
+                    android:id="@+id/line_bottom6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#9f9f9f"
+                    android:layout_below="@+id/regpassword_icon5"
+                    />
+
 
 
             </RelativeLayout>
@@ -138,6 +199,9 @@
                     android:layout_width="@dimen/icon_width"
                     android:layout_height="@dimen/icon_height"
                     android:src="@mipmap/password_ic"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginRight="5dp"
                     android:id="@+id/password_icon2" />
 
                 <EditText
@@ -147,19 +211,38 @@
                     android:hint="@string/prompt_password_repeat"
                     android:imeActionId="@+id/login"
                     android:imeActionLabel="@string/action_sign_in_short"
+                    android:background="@null"
                     android:imeOptions="actionUnspecified"
                     android:inputType="textPassword"
                     android:maxLines="1"
                     android:layout_toRightOf="@+id/password_icon2"
                     android:singleLine="true" />
+                <View
+                    android:id="@+id/line_bottom3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="#9f9f9f"
+                    android:layout_below="@+id/password_icon2"
+                    />
+
 
 
             </RelativeLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_height="wrap_content"
+                android:id="@+id/reg_show_info"
+                android:text=""
+                android:gravity="center"
+                android:textColor="@color/for_alert_login"
+                android:layout_marginBottom="10dp"/>
 
             <ImageButton android:id="@+id/register_btn"
                 android:src="@drawable/verify_not"
-                android:layout_width="316dp"
-                android:layout_height="96dp"
+                android:layout_width="73.7dp"
+                android:layout_height="73.7dp"
                 style="?android:attr/borderlessButtonStyle"
                 android:scaleType="centerInside"
                 android:layout_gravity="center"
@@ -192,6 +275,6 @@
 
 
         </LinearLayout>
-
+    </ScrollView>
 </LinearLayout>
 </FrameLayout>

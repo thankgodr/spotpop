@@ -14,12 +14,13 @@
         completions."
     </string>
     <string name="prompt_userName">Username</string>
+    <string name="error_userName">Username must be more than 3</string>
     <string name="prompt_password_repeat">Repeat Password</string>
     <string name="action_sign_up">Sign Up</string>
     <string name="text_already">Already a Member</string>
     <string name="login_text">Login Now!</string>
-    <string name="text_not_already">Not a Member</string>
-    <string name="text_join">Join Today</string>
+    <string name="text_not_already">Not a Member?</string>
+    <string name="text_join">Join Today!</string>
     <string name="forgot_password">Forgot your password?</string>
     <string name="title_activity_main">MainActivity</string>
 
@@ -31,4 +32,74 @@
     <string name="title_activity_splashscreen">SplashscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="passwordNotOkay">Password Does Not Match</string>
+    <string name="passwordEmpty">Password field is empty and password mst be 6 and contain atleast 1 Uppercase</string>
+    <string name="login_password_error">pass word field is emapty</string>
+    <string name="facebook_app_id">104799226607949</string>
+    <string name="edit_account">Edit Account</string>
+    <string name="profile_image">Profile Picture</string>
+    <string name="facebook_canceled">Login was canceled</string>
+    <string name="facebook_error">There was an error</string>
+    <string name="error_invalid_username">Invalid username</string>
+    <string name="forgot_password_request_Title">Reset your Password</string>
+    <string name="after_passwor_request_onsuccess">check you email for Instruction</string>
+
+    <!-- To be deleted-->
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="add_image">addImage</string>
+    <string name="delete_image">deleteImage</string>
+    <string name="thumbnail">thumbnail</string>
+
+    <string name="delete">Delete</string>
+    <string name="search">Search</string>
+    <string name="settings">Settings</string>
+    <string name="edit">Edit</string>
+    <string name="exit">Exit</string>
+    <string name="tag">\@info</string>
+    <string name="internet_connection_error">Check your internet connection</string>
+    <string name="please_wait">Please wait....</string>
+    <string name="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="turn_on_not">Turn on notification</string>
+    <string name="share">Share</string>
+    <string name="copy_share_url">Copy share url</string>
+    <string name="report">Report</string>
+    <string name="businame">Busines Name</string>
+    <string name="location_prompt">Location/Address</string>
+    <string name="wifi_name_prompt">WiFi Name(SSID)</string>
+    <string name="password_protect">Password Protected?</string>
+    <string name="password_optional">Password(optional)</string>
+    <string name="carrier_name">Carrier Name(optional)</string>
+    <string name="add_spot_title">Add Spot</string>
+    <string name="slow">Slow(2g/Edge)</string>
+    <string name="medium">medium(3g)</string>
+    <string name="fast">Fast(4g/LTE)</string>
+    <string name="good4work">Good for Working</string>
+    <string name="power_outlet">Power Outlets?</string>
+    <string name="spot_galery">Spot Gallery(optional)</string>
+    <string name="submit_spot">Submit Spot</string>
+    <string name="title_activity_maplist">Map</string>
+    <string name="mapview">Map View</string>
+    <string name="listview">List View</string>
+
+
+     <string name="any_text">
+ <![CDATA[ <b><font color=#ff0000>write</b> your <b><font color=#0000ff>text</b> here .
+
+]]>
+  </string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="find_contact">Find Contact</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="push_notify">Push Notifications</string>
+    <string name="spot_liked">Spots You\'ve Liked</string>
+    <string name="private_account">Private Account</string>
+    <string name="when_accout">When account</string>
+    <string name="blockuser">Block User</string>
+    <string name="reportuser">Report user</string>
+    <string name="notifyon">Turn On Push Notifications</string>
+    <string name="sendmessage">Send Message</string>
 </resources>

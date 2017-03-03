@@ -1,0 +1,315 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.shixxels.thankgodrichard.spotpopfinal.segment.AddSpot">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/light_grey"
+            android:minHeight="?attr/actionBarSize"
+            android:titleTextColor="@color/light_black">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="17dp"
+                    android:id="@+id/close_icon"
+                    android:src="@drawable/close_icon"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_spot_title"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="Roboto"
+                    android:textSize="20sp"
+                    android:id="@+id/textView3" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left|top"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+                    <EditText
+                        android:layout_marginTop="16dp"
+                        android:layout_width="match_parent"
+                        android:inputType="text"
+                        android:layout_height="@dimen/editext_height"
+                        android:drawableLeft="@drawable/business_name_icon"
+                        android:drawablePadding="7dp"
+                        android:id="@+id/business_name"
+                        android:paddingLeft="10dp"
+                        android:hint="@string/businame"
+                        android:background="@drawable/edit_text_style"
+                        android:textColorHint="@color/text_hint"
+                        android:layout_marginBottom="@dimen/btm"
+                        android:minLines="1" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/editext_height"
+                        android:background="@drawable/edit_text_style"
+                        android:hint="@string/location_prompt"
+                        android:drawableLeft="@drawable/location_icon"
+                        android:drawablePadding="7dp"
+                        android:paddingLeft="10dp"
+                        android:inputType="textPostalAddress"
+                        android:textColorHint="@color/text_hint"
+                        android:layout_marginBottom="@dimen/btm"
+                        android:id="@+id/location_addr"
+                        android:minLines="1" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/editext_height"
+                        android:hint="@string/wifi_name_prompt"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="2dp"
+                        android:drawableLeft="@drawable/layer_2"
+                        android:drawablePadding="7dp"
+                        android:background="@drawable/edit_text_style"
+                        android:textColorHint="@color/text_hint"
+                        android:layout_marginBottom="@dimen/btm"
+                        android:id="@+id/ssid"
+                        android:minLines="1" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/btm"
+                        >
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_weight="6"
+                            android:layout_height="27dp"
+                            android:layout_marginRight="5dp"
+                            android:textSize="8sp"
+                            android:paddingLeft="10dp"
+                            android:drawableLeft="@drawable/layer_3"
+                            android:text="@string/password_protect"
+                            android:gravity="center"
+                            android:id="@+id/password_protected"
+                            android:textColor="@color/btn_text_color"
+                            android:background="@drawable/button_custom"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/editext_height"
+                            android:id="@+id/wifi_passw"
+                            android:hint="@string/password_optional"
+                            android:paddingLeft="10dp"
+                            android:textColorHint="@color/text_hint"
+                            android:background="@drawable/edit_text_style"
+                            android:layout_weight="2"
+                            android:minLines="1" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/editext_height"
+                        android:background="@drawable/edit_text_style"
+                        android:hint="@string/carrier_name"
+                        android:paddingLeft="10dp"
+                        android:drawablePadding="7dp"
+                        android:drawableLeft="@drawable/layer_1"
+                        android:layout_marginBottom="@dimen/btm"
+                        android:id="@+id/carrier_name"
+                        android:minLines="1" />
+
+
+
+                    <RadioGroup
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp"
+                        >
+
+                        <Button
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/slow"
+                            android:textSize="10sp"
+                            android:textColor="@color/btn_text_color"
+                            android:background="@drawable/button_custom"
+                            android:id="@+id/slow_selected" />
+
+                        <Button
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/medium"
+                            android:textSize="10sp"
+                            android:textColor="@color/btn_text_color"
+                            android:background="@drawable/button_custom"
+                            android:id="@+id/medium_select" />
+
+
+                        <Button
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/fast"
+                            android:textSize="10sp"
+                            android:textColor="@color/btn_text_color"
+                            android:background="@drawable/button_custom"
+                            android:id="@+id/fast_select" />
+
+
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/btm"
+                        >
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/good4work"
+                            android:textColor="@color/btn_text_color"
+                            android:layout_weight="2"
+                            android:drawableLeft="@drawable/layer_5"
+                            android:paddingLeft="5dp"
+                            android:id="@+id/good4work"
+                            android:textSize="10sp"
+                            android:background="@drawable/button_custom"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/power_outlet"
+                            android:paddingLeft="5dp"
+                            android:drawableLeft="@drawable/layer_4"
+                            android:textColor="@color/btn_text_color"
+                            android:layout_weight="2"
+                            android:textSize="10sp"
+                            android:id="@+id/power_outlet"
+                            android:background="@drawable/button_custom"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/btm"
+                        android:layout_marginTop="10dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/galerry_icon"
+                            android:src="@drawable/layer_9"
+                            android:layout_marginRight="3dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/btn_text_color"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="@string/spot_galery"
+                            android:textSize="13sp"
+                            android:id="@+id/spot_galery"
+                            android:layout_gravity="center_horizontal" />
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="23dp"
+                        >
+                        <ImageButton
+                            android:id="@+id/answercall"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@null"
+                            android:src="@mipmap/addimage"
+                            android:scaleType="fitXY" />
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_toRightOf="@+id/answercall"
+                            android:layout_height="80dp"
+                            android:fillViewport="false"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:id="@+id/imageholder"
+                                android:orientation="horizontal"
+                                android:layout_height="match_parent">
+
+                            </LinearLayout>
+
+                        </HorizontalScrollView>
+
+                    </RelativeLayout>
+
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/submit_spot"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:textColor="@color/white"
+                        android:background="@color/submit_spot"
+                        android:id="@+id/add_spot_submit_btm"
+                        android:layout_gravity="center"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

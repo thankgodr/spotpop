@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_weight="7"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sort_by"
+        android:layout_gravity="center_horizontal" />
+
+    <Spinner
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/internet_speed"
+        android:layout_gravity="center_horizontal" />
+
+    <Spinner
+        android:layout_weight="1"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password_protected"
+        android:layout_gravity="center_horizontal" />
+
+    <Spinner
+        android:layout_weight="1"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/good4work"
+        android:layout_gravity="center_horizontal" />
+
+    <Spinner
+        android:layout_weight="1"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/power_outlet"
+        android:layout_gravity="center_horizontal" />
+
+    <ProgressBar
+        android:layout_weight="1"
+        android:layout_marginBottom="10dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_distance"
+        android:layout_gravity="center_horizontal"
+        android:indeterminate="false" />
+
+    <Button
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:text="Apply Filters"
+        android:id="@+id/apply"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

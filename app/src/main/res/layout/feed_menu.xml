@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:weightSum="4"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:id="@+id/invitefrnds"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/borderbtm"
+                android:clickable="true">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/report"
+                    android:gravity="center"
+                    android:text="@string/report"
+                    android:textSize="@dimen/profile_menu"
+                    android:layout_gravity="start|center_horizontal" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:id="@+id/pushnotify"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/borderbtm"
+                android:clickable="true">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/push_notify"
+                    android:gravity="center"
+                    android:textSize="@dimen/profile_menu"
+                    android:layout_gravity="start|center_horizontal"
+                    />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:id="@+id/spotyoulike"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/borderbtm"
+                android:clickable="true">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/spot_liked"
+                    android:gravity="center"
+                    android:textSize="@dimen/profile_menu"
+                    android:layout_gravity="start|center_horizontal"
+                    />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:id="@+id/privateaccount"
+                android:background="@drawable/borderbtm"
+                android:clickable="true">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/private_account"
+                    android:textSize="@dimen/profile_menu"
+                    android:gravity="center"
+                    android:layout_gravity="start|center_horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+

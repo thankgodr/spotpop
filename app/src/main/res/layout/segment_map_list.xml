@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/jumbo"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/list_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <fragment
+                android:id="@+id/map"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/ic_search"
+                    android:hint="Search for Address"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp" />
+
+
+            </fragment>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:maxHeight="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="60dp"
+            android:id="@+id/search_type"
+            android:background="@color/bgprofil">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/mapview"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="42dp"
+                    android:background="@drawable/button_map"
+                    android:layout_width="0dp"
+                    android:textColor="@color/white"
+                    android:layout_height="35dp"
+                    android:text="@string/mapview" />
+
+                <Button
+                    android:layout_weight="1"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="42dp"
+                    android:id="@+id/list_view"
+                    android:background="@drawable/button_map"
+                    android:textColor="@color/white"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:text="@string/listview" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

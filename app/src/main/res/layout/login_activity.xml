@@ -15,38 +15,70 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center_horizontal">
+        android:layout_gravity="center_horizontal"
+        >
 
-        <include layout="@layout/widowstitle"/>
+        <ImageView
+            android:id="@+id/toolbar_logo"
+            android:src="@drawable/logo"
+            android:layout_width="277.7dp"
+            android:layout_height="115.3dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
 
-        <ImageButton android:id="@+id/facebook_login"
-            android:src="@drawable/facebook_login"
-            android:layout_width="316dp"
-            android:layout_height="104dp"
-            style="?android:attr/borderlessButtonStyle"
-            android:scaleType="centerInside"
-            android:layout_gravity="center" />
+            />
 
 
 
-            <LinearLayout
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/facebook_login"
+                android:layout_width="246.7dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="15dp"
+                android:paddingLeft="25dp"
+                android:paddingTop="15dp"
+                android:layout_marginTop="25.3dp" />
+
+        <TextView
+            android:id="@+id/login_show_info"
+            android:layout_width="246.7dp"
+            android:layout_height="25dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="@color/bgprofil"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp" />
+
+
+
+        <LinearLayout
                 android:id="@+id/email_login_form"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp">
 
 
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                    android:layout_marginRight="@dimen/activity_horizontal_margin">
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp">
+
                     <ImageView
                         android:layout_width="@dimen/icon_width"
                         android:layout_height="@dimen/icon_height"
                         android:id="@+id/login_username_icon"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="5dp"
+                        android:layout_marginRight="5dp"
                         android:src="@mipmap/username_ic"/>
 
                     <EditText
@@ -57,9 +89,23 @@
                         android:imeActionLabel="@string/action_sign_in_short"
                         android:imeOptions="actionUnspecified"
                         android:inputType="text"
+                        android:textStyle="italic"
+                        android:fontFamily="sans-serif-light"
+                        android:layout_marginTop="7dp"
+                        android:background="@null"
+                        android:textColorHint="@color/hintColor"
                         android:maxLines="1"
                         android:layout_toRightOf="@+id/login_username_icon"
                         android:singleLine="true" />
+
+                    <View
+                        android:id="@+id/line_bottom"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dip"
+                        android:background="#9f9f9f"
+                        android:layout_below="@+id/login_username"
+                        android:layout_marginTop ="5dp"
+                        />
 
 
 
@@ -70,14 +116,15 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="30dp"
-                    android:layout_marginRight="@dimen/activity_horizontal_margin"
-                    android:layout_marginLeft="@dimen/activity_horizontal_margin">
-
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp">
                     <ImageView
                         android:layout_width="@dimen/icon_width"
                         android:layout_height="@dimen/icon_height"
                         android:id="@+id/login_password3"
+                        android:paddingRight="5dp"
+                        android:layout_marginRight="5dp"
                         android:src="@mipmap/password_ic"/>
 
                     <EditText
@@ -86,26 +133,43 @@
                         android:layout_height="wrap_content"
                         android:hint="@string/prompt_password"
                         android:imeActionId="@+id/login"
+                        android:layout_marginTop="7dp"
                         android:imeActionLabel="@string/action_sign_in_short"
                         android:imeOptions="actionUnspecified"
                         android:inputType="textPassword"
+                        android:background="@null"
+                        android:textStyle="italic"
+                        android:fontFamily="sans-serif-light"
+                        android:textColorHint="@color/hintColor"
                         android:maxLines="1"
                         android:layout_toRightOf="@id/login_password3"
                         android:singleLine="true" />
+
+                    <View
+                        android:id="@+id/line_bottom2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dip"
+                        android:background="#9f9f9f"
+                        android:layout_below="@+id/login_password3"
+                        android:layout_marginTop ="5dp"
+                        />
+
 
 
                 </RelativeLayout>
 
 
 
+
                 <ImageButton android:id="@+id/login_btn"
                     android:src="@drawable/verify_not"
-                    android:layout_width="316dp"
-                    android:layout_height="96dp"
+                    android:layout_width="73.7dp"
+                    android:layout_height="73.7dp"
                     style="?android:attr/borderlessButtonStyle"
                     android:scaleType="centerInside"
                     android:layout_gravity="center"
-                    android:layout_marginBottom="30dp"/>
+                    android:background="@android:color/transparent"
+                    android:layout_marginBottom="20dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -113,12 +177,14 @@
                     android:text="@string/forgot_password"
                     android:id="@+id/forgot_password"
                     android:layout_gravity="center_horizontal"
-                    android:paddingBottom="5dp" />
+                    android:paddingBottom="5dp"
+                    android:clickable="true" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal">
+                    android:layout_gravity="center_horizontal"
+                    >
 
                     <TextView
                         android:layout_width="wrap_content"

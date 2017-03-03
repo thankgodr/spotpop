@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#d86500</color>
-    <color name="colorPrimaryDark">#d86500</color>
+    <color name="colorPrimary">#ede4e0</color>
+    <color name="colorPrimaryDark">#ede4e0</color>
     <color name="colorAccent">#FF4081</color>
     <color name="loginTab">#ede4e0</color>
     <color name="for_alert_login">#f85439</color>
 
     <color name="black_overlay">#66000000</color>
+    <color name="bgprofil">#f85439</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#ababab</color>
+    <color name="light_black">#010101</color>
+    <color name="light_grey">#eee9ea</color>
+    <color name="text_hint">#9C9899</color>
+    <color name="btn_text_color">#706E6F</color>
+    <color name="submit_spot">#FA482A</color>
+    <color name="button_selected">#716F70</color>
+    <color name="settingscolor">#717171</color>
+    <color name="arrColor">#bababa</color>
+    <color name="hintColor">#a5a3a3</color>
+    <color name="fabg">#fafafa</color>
+    <color name="btmbartint">#929292</color>
 </resources>

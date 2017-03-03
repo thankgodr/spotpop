@@ -1,0 +1,230 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".segment.profileSub.ProfileMenu">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/white"
+       >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginLeft="10dp"
+           android:weightSum="6"
+           android:orientation="vertical">
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/edit_profile"
+               android:layout_weight="1"
+               android:orientation="horizontal"
+               android:background="@drawable/borderbtm"
+               android:layout_marginBottom="10dp"
+               android:clickable="true">
+
+               <TextView
+                   android:paddingTop="10dp"
+                   android:paddingBottom="10dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/edit_profile"
+                   android:textSize="@dimen/profile_menu"
+                   android:layout_gravity="center_horizontal"
+                   />
+
+               <Space
+                   android:layout_width="0dp"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" />
+
+               <ImageView
+                   android:paddingTop="9dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="20dp"
+                   android:src="@mipmap/ic_right_angle"/>
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="horizontal"
+               android:layout_weight="1"
+               android:id="@+id/findcontact"
+               android:layout_marginBottom="10dp"
+               android:background="@drawable/borderbtm"
+               android:clickable="true">
+
+
+           <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:paddingTop="10dp"
+                   android:paddingBottom="10dp"
+                   android:text="@string/find_contact"
+                   android:textSize="@dimen/profile_menu"
+                   android:layout_gravity="start|center_horizontal"
+                   />
+
+               <Space
+                   android:layout_width="0dp"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" />
+
+               <ImageView
+                   android:paddingTop="9dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="20dp"
+                   android:src="@mipmap/ic_right_angle"/>
+
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="horizontal"
+               android:layout_weight="1"
+               android:id="@+id/invitefrnds"
+               android:layout_marginBottom="4dp"
+               android:background="@drawable/borderbtm"
+               android:clickable="true">
+
+
+           <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:paddingTop="10dp"
+                   android:paddingBottom="10dp"
+                   android:text="@string/invite_friends"
+                   android:textSize="@dimen/profile_menu"
+                   android:layout_gravity="start|center_horizontal" />
+
+               <Space
+                   android:layout_width="0dp"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" />
+
+               <ImageView
+                   android:paddingTop="9dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="20dp"
+                   android:src="@mipmap/ic_right_angle"/>
+
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="horizontal"
+               android:layout_weight="1"
+               android:id="@+id/pushnotify"
+               android:layout_marginBottom="10dp"
+               android:background="@drawable/borderbtm"
+               android:clickable="true">
+
+
+           <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/push_notify"
+                   android:paddingTop="10dp"
+                   android:paddingBottom="10dp"
+                   android:textSize="@dimen/profile_menu"
+                   android:layout_gravity="start|center_horizontal"
+                   />
+
+               <Space
+                   android:layout_width="0dp"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" />
+
+               <ImageView
+                   android:paddingTop="9dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="20dp"
+                   android:src="@mipmap/ic_right_angle"/>
+
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="horizontal"
+               android:layout_weight="1"
+               android:id="@+id/spotyoulike"
+               android:layout_marginBottom="10dp"
+               android:background="@drawable/borderbtm"
+               android:clickable="true">
+
+
+           <TextView
+                   android:layout_width="wrap_content"
+                   android:paddingTop="10dp"
+                   android:paddingBottom="10dp"
+                   android:layout_height="wrap_content"
+                   android:text="@string/spot_liked"
+                   android:textSize="@dimen/profile_menu"
+                   android:layout_gravity="start|center_horizontal"
+                   />
+
+               <Space
+                   android:layout_width="0dp"
+                   android:layout_height="0dp"
+                   android:layout_weight="1" />
+
+               <ImageView
+                   android:paddingTop="9dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="20dp"
+                   android:src="@mipmap/ic_right_angle"/>
+
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="horizontal"
+               android:layout_weight="1"
+               android:id="@+id/privateaccount"
+               android:background="@drawable/borderbtm"
+               android:clickable="true">
+
+
+           <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/private_account"
+                   android:textSize="@dimen/profile_menu"
+                   android:layout_gravity="start|center_horizontal"
+                   android:paddingTop="10dp"
+                   android:paddingBottom="10dp"
+
+               />
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="0dp"
+                   android:layout_weight="1"
+                   android:text="@string/when_accout"/>
+
+               <Switch
+                   android:layout_width="wrap_content"
+                   android:layout_height="25dp"
+                   android:src="@mipmap/ic_right_angle"/>
+
+
+           </LinearLayout>
+
+
+
+       </LinearLayout>
+
+   </ScrollView>
+</FrameLayout>

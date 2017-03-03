@@ -1,0 +1,247 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shixxels.thankgodrichard.spotpopfinal.segment.Profile">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/bgprofil">
+
+            <FrameLayout
+                android:layout_width="105dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_height="100dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/thumb_1_1"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/white"/>
+
+                <View
+                    android:layout_width="25dp"
+                    android:id="@+id/stutus_color"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/status_circle"
+                    android:textSize="14sp"/>
+
+            </FrameLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Titi Smith"
+                android:id="@+id/profile_name"
+                android:layout_marginBottom="0dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:text="MezeTetei"
+                android:id="@+id/proofile_handle"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:weightSum="6"
+                    android:paddingTop="2dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/profile_bg"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1.5"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:textColor="@color/white"
+                            android:id="@+id/added_count"
+                            android:textSize="35sp"
+                            android:text="72"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_toRightOf="@+id/added_count"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:paddingTop="10dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="SPOTS"
+                                android:textSize="13sp"
+                                android:textColor="@color/white"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ADDED"
+                                android:textSize="13sp"
+                                android:textColor="@color/white"
+                                />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/white"
+                            android:id="@+id/followers_count"
+                            android:textSize="25sp"
+                            android:text="121"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="FOLLOWERS"
+                            android:layout_below="@+id/followers_count"
+                            android:paddingTop="0dp"
+                            android:textSize="8sp"
+                            android:textColor="@color/white"
+                            />
+
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/white"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/following_count"
+                            android:textSize="25sp"
+                            android:text="34"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="FOLLOWING"
+                            android:gravity="center_horizontal"
+                            android:paddingTop="0dp"
+                            android:layout_below="@+id/following_count"
+                            android:textSize="8sp"
+                            android:textColor="@color/white"
+                            />
+
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="60dp"
+                            android:padding="3dp"
+                            android:id="@+id/inmagecup"
+                            android:src="@mipmap/cup_world"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/inmagecup"
+                            android:orientation="vertical"
+                            android:paddingTop="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:id="@+id/worlwide_profile"
+                                android:textSize="20sp"
+                                android:text="121"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="FOLLOWING"
+                                android:layout_below="@+id/worlwide_profile"
+                                android:paddingTop="0dp"
+                                android:textSize="7sp"
+                                android:textColor="@color/white"
+                                />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/profile_menu_container"
+            android:orientation="vertical"
+            android:layout_marginBottom="60dp">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
